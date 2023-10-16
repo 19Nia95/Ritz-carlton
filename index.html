@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@photo-sphere-viewer/core/index.min.css"
+    />
+  </head>
+
+  <body>
+    <div class="bg_img">
+      <header class="header">
+        <div class="header__logo">
+          <a href="#"><img src="img/logo.png" alt="logo" /></a>
+        </div>
+        <div class="header__info">
+          <div class="social">
+            <img src="img/icon-tg.png" alt="telegram" />
+            <img src="img/icon-wh.png" alt="whatsUp" />
+          </div>
+          <div class="number">+99899 xxx xx xx</div>
+        </div>
+      </header>
+
+      <div class="overlay js-overlay-modal"></div>
+
+      <!-- apartmens -->
+
+      <a href="#" class="modal-btn apartmens js-open-modal" data-modal="1">
+        <h1>M1</h1>
+        <span>Apartmens</span>
+      </a>
+
+      <div class="modal" data-modal="1">
+        <div class="modal__cross">
+          <svg
+            class="js-modal-close"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"
+            />
+          </svg>
+        </div>
+        <div class="modal__box">
+          <div id="apartmens" style="width: 1250px; height: 640px"></div>
+        </div>
+      </div>
+
+      <!-- mansion -->
+
+      <a href="#" class="modal-btn mansion js-open-modal" data-modal="2">
+        <h1>M2</h1>
+        <span>Mansion</span>
+      </a>
+
+      <div class="modal" data-modal="2">
+        <div class="modal__cross">
+          <svg
+            class="js-modal-close"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"
+            />
+          </svg>
+        </div>
+        <div class="modal__box">
+          <div id="mansion" style="width: 1250px; height: 640px"></div>
+        </div>
+      </div>
+
+      <!-- park -->
+
+      <a href="#" class="modal-btn park js-open-modal" data-modal="3">
+        <h1>P1</h1>
+        <span>Park</span>
+      </a>
+
+      <div class="modal" data-modal="3">
+        <div class="modal__cross">
+          <svg
+            class="js-modal-close"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"
+            />
+          </svg>
+        </div>
+        <div class="modal__box">
+          <div id="park" style="width: 1250px; height: 640px"></div>
+        </div>
+      </div>
+
+      <!-- road -->
+
+      <a href="#" class="modal-btn road js-open-modal" data-modal="4">
+        <h1>P2</h1>
+        <span>Road</span>
+      </a>
+
+      <div class="modal" data-modal="4">
+        <div class="modal__cross">
+          <svg
+            class="js-modal-close"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"
+            />
+          </svg>
+        </div>
+        <div class="modal__box">
+          <div id="road" style="width: 1250px; height: 640px"></div>
+        </div>
+      </div>
+
+      <!-- brochure -->
+
+      <a href="#" class="modal-btn brochure js-open-modal" data-modal="5">
+        <span>DOWNLOAD BROCHURE</span>
+        <img src="img/download.png" alt="download-arrow" />
+      </a>
+
+      <div class="modal modal-brochure" data-modal="5">
+        <div class="modal__cross">
+          <svg
+            class="js-modal-close"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"
+            />
+          </svg>
+        </div>
+        <div class="modalBrochure__info-box">
+          <div class="modalBrochure__info">
+            <h1>
+              Don't Miss <br />
+              The Unique Offer
+            </h1>
+            <p>
+              Be the first to experience the beauty of Keturah Resort at our
+              exclusive private screening event! Leave your contact information
+              below to receive an invitation to our special event.
+            </p>
+            <div class="modalBrochure__socialNetwork">
+              <div class="modalBrochure__social">
+                <img src="img/icon-tg.png" alt="" />
+                <span>Telegram</span>
+              </div>
+              <div class="modalBrochure__social">
+                <img src="img/icon-wh.png" alt="" />
+                <span>WhatsUp</span>
+              </div>
+            </div>
+          </div>
+          <form action="#" class="modalBrochure__form">
+            <input type="text" placeholder="Your name" />
+            <input type="email" placeholder="Your e-mail" />
+            <input type="tel" placeholder="Phone number" />
+            <button>JOIN NOW</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+
+    <script type="importmap">
+      {
+        "imports": {
+          "three": "https://cdn.jsdelivr.net/npm/three/build/three.module.js",
+          "@photo-sphere-viewer/core": "https://cdn.jsdelivr.net/npm/@photo-sphere-viewer/core/index.module.js"
+        }
+      }
+    </script>
+
+    <script type="module">
+      import { Viewer } from "@photo-sphere-viewer/core";
+
+      const viewer = new Viewer({
+        container: document.querySelector("#apartmens"),
+        panorama: "./img/2.jpg",
+        panoData: {
+          fullWidth: 1000,
+          fullHeight: 3000,
+          croppedWidth: 6000,
+          croppedHeight: 2300,
+          croppedX: 5000,
+          croppedY: 500,
+          poseHeading: 0, // 0 to 360
+          posePitch: 0, // -90 to 90
+          poseRoll: 0, // -180 to 180
+        }, 
+        
+      });
+
+      const mansion = new Viewer({
+        container: document.querySelector("#mansion"),
+        panorama: "./img/3.jpg",
+        panoData: {
+          fullWidth: 1000,
+          fullHeight: 3000,
+          croppedWidth: 6000,
+          croppedHeight: 2300,
+          croppedX: 5000,
+          croppedY: 500,
+          poseHeading: 0, // 0 to 360
+          posePitch: 0, // -90 to 90
+          poseRoll: 0, // -180 to 180
+        }, 
+      });
+
+      const park = new Viewer({
+        container: document.querySelector("#park"),
+        panorama: "./img/4.jpg",
+        panoData: {
+          fullWidth: 1000,
+          fullHeight: 3000,
+          croppedWidth: 6000,
+          croppedHeight: 2300,
+          croppedX: 5000,
+          croppedY: 500,
+          poseHeading: 0, // 0 to 360
+          posePitch: 0, // -90 to 90
+          poseRoll: 0, // -180 to 180
+        }, 
+      });
+
+      const road = new Viewer({
+        container: document.querySelector("#road"),
+        panorama: "./img/1.jpg",
+        panoData: {
+          fullWidth: 1000,
+          fullHeight: 3000,
+          croppedWidth: 6000,
+          croppedHeight: 2300,
+          croppedX: 5000,
+          croppedY: 500,
+          poseHeading: 0, // 0 to 360
+          posePitch: 0, // -90 to 90
+          poseRoll: 0, // -180 to 180
+        }, 
+      });
+    </script>
+
+  </body>
+</html>

@@ -1,0 +1,312 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    color: #ffff;
+}
+
+.bg_img {
+    background-image: url(img/bg-img.png);
+    height: 100vh;
+    background-size: cover;
+
+    position: relative;
+    
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 0 0;
+    margin: 0 30px;
+    border-bottom: 1px solid rgba(250, 245, 245, 0.3);
+}
+
+.header__logo{
+    border-right: 1px solid rgba(250, 245, 245, 0.3);
+    padding-right: 20px;
+}
+
+.header__info{
+    display: flex;
+}
+
+.header__info .social{
+    padding: 10px 20px 0;
+    border-right: 1px solid rgba(250, 245, 245, 0.3);
+    border-left: 1px solid rgba(250, 245, 245, 0.3);
+}
+
+.social img:first-child{
+    margin-right: 15px;
+}
+
+.social img:nth-child(2){
+    width: 23px;
+}
+
+.header__info .number{
+    color: rgba(250, 245, 245, 0.7);
+    font-size: 18px;
+    font-weight: 400;
+    text-transform: uppercase;
+
+    padding: 10px 24px;
+}
+
+
+/* modal box */
+.overlay {
+    opacity: 0;
+    visibility: hidden;
+    
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .7);
+    z-index: 20;
+    transition: .3s all;
+}
+
+.modal {
+    
+    opacity: 0;
+    visibility: hidden;
+
+    width: 1295px;
+    height: 680px;
+    
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+    z-index: 30;
+    
+    box-shadow: 0 3px 10px -.5px rgba(0, 0, 0, .2); 
+    padding: 20px;
+    border-radius: 3px;
+    background-color: #fff;
+    transition: 0.5s all;
+}
+
+ 
+.modal.active,
+.overlay.active, .modal-brochure.active{
+    opacity: 1;
+    visibility: visible;
+}
+ 
+.modal__cross {
+    width: 22px;
+    position: absolute;
+    top: -28px;
+    right: 6px;
+    fill: #444;
+    cursor: pointer;
+}
+
+.modal__cross svg{
+    fill: white;
+}
+
+.modal-btn{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 130px;
+    padding: 4px 6px 4px 4px;
+    background-color: black;
+    border: none;
+    cursor: pointer;
+    background-image: linear-gradient(135deg,rgba(186,186,186,.2117647059) 60%,transparent 0);  
+    text-decoration: none;
+
+}
+
+.modal-btn h1{
+    background-color: #fff;
+    color: #2d2d2d;
+    padding: 3px;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 14px;
+}
+
+.modal-btn span{
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 17px;
+    color: white;
+}
+
+.apartmens{
+    position: absolute;
+    top: 27%;
+    right: 43%;
+}
+
+.mansion{
+    position: absolute;
+    top: 65%;
+    left: 10%;
+}
+
+.park{
+    width: 90px;
+    position: absolute;
+    top: 61%;
+    left: 33%;
+}
+
+.road{
+    position: absolute;
+    top: 82%;
+    right: 28%;
+}
+
+
+/* brochure */
+
+.brochure{
+    position: absolute;
+    bottom: 11%;
+    left: 8%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+
+    background-image: linear-gradient(162deg,rgba(186,186,186,.2117647059) 60%,transparent 0);
+    background-color:black;
+
+    width: 310px;
+    text-align: center;
+    padding: 6px 30px 7px; 
+    border: none;
+    color: white;
+    cursor: pointer; 
+}
+
+.modal-brochure{
+    width:900px;
+    height: 440px;
+    padding: 0;
+}
+
+.modalBrochure{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 99998;
+    background-color: rgba(0, 0, 0, .3);
+    color: black;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    overflow-y: auto ;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity .4s, visibility .4s; 
+}
+
+.modalBrochure__box{
+    position: relative;
+    max-width: 5000px;
+    padding: 45px;
+    z-index: 1;
+    transform: scale(0);
+    transition: transform .8s;
+}
+
+.modalBrochure__close-btn{
+    top: 16px;
+    right: 19px;
+}
+
+.modalBrochure__info-box{
+    display: flex; 
+}
+
+.modalBrochure__info{
+    background-image: url(img/modalBox-info.png);
+    background-size: cover;
+    max-width: 440px;
+    padding: 80px 50px 80px 25px;
+}
+
+.modalBrochure__info h1{
+    font-family: "Times New Roman";
+    font-style: italic;
+    font-weight: 400;
+    font-size: 45px;
+    line-height: 100%;
+    text-align: center;
+    text-transform: capitalize;
+    color: #fff;
+
+
+}
+.modalBrochure__info p{
+    font-size: 16px;
+    text-align: center;
+    color: #fff;
+    font-weight: 300;
+    line-height: 20px;
+    margin: 30px 0;
+}
+
+.modalBrochure__socialNetwork{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    color: #F3F2EF;
+    font-size: 16px;
+}
+
+.modalBrochure__social{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.modalBrochure__form{
+    background-color: black;
+    max-width: 460px;
+    padding: 38px 30px 82px;
+}
+
+.modalBrochure__form input{
+    font-family: 'Montserrat', sans-serif;
+    width: 100%;
+    font-size: 18px;
+    padding: 10px 13px;
+    color: #fff;
+    border: none;
+    border-bottom: 1px solid rgba(145,145,145,.5);
+    background-color: transparent;
+    margin-top: 44px;
+}
+
+.modalBrochure__form input::placeholder{
+    color: white;
+}
+
+.modalBrochure__form button{
+    padding: 14px 0 9px;
+    margin-top: 30px;
+    width: 100%;
+    cursor: pointer;
+}
+
+
+
